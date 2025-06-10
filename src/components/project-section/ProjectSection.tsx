@@ -10,44 +10,44 @@ import Image from "next/image"
 export function ProjectsSection() {
   const projects = [
     {
-      title: "E-Commerce Dashboard",
+      title: "Progressive Web Apps (E-Commerce)",
       description:
-        "Modern admin dashboard built with Next.js, Redux Toolkit, and Tailwind CSS featuring real-time analytics and inventory management.",
-      image: "/placeholder.svg?height=300&width=500",
-      technologies: ["Next.js", "Redux Toolkit", "Tailwind CSS", "Shadcn/UI"],
-      github: "#",
-      demo: "#",
+        "",
+      image: "/images/luxspace.png",
+      technologies: ["React.js", "Tailwind CSS"],
+      github: "https://github.com/elbiz17/luxspace_pwa",
+      demo: "https://luxspace-pwa-eight-gamma.vercel.app/",
       featured: true,
     },
-    {
-      title: "Task Management App",
-      description:
-        "Collaborative task management application with drag-and-drop functionality using React, RTK Query, and Bootstrap components.",
-      image: "/placeholder.svg?height=300&width=500",
-      technologies: ["React.js", "RTK Query", "Bootstrap", "JavaScript"],
-      github: "#",
-      demo: "#",
-      featured: true,
-    },
-    {
-      title: "Portfolio Website",
-      description:
-        "Responsive portfolio website showcasing modern design principles with Tailwind CSS and smooth animations.",
-      image: "/placeholder.svg?height=300&width=500",
-      technologies: ["Next.js", "Tailwind CSS", "TypeScript", "Framer Motion"],
-      github: "#",
-      demo: "#",
-      featured: false,
-    },
-    {
-      title: "Weather App",
-      description: "Real-time weather application with location-based forecasts using React hooks and external APIs.",
-      image: "/placeholder.svg?height=300&width=500",
-      technologies: ["React.js", "CSS3", "JavaScript", "Weather API"],
-      github: "#",
-      demo: "#",
-      featured: false,
-    },
+    // {
+    //   title: "Task Management App",
+    //   description:
+    //     "Collaborative task management application with drag-and-drop functionality using React, RTK Query, and Bootstrap components.",
+    //   image: "/placeholder.svg?height=300&width=500",
+    //   technologies: ["React.js", "RTK Query", "Bootstrap", "JavaScript"],
+    //   github: "#",
+    //   demo: "#",
+    //   featured: true,
+    // },
+    // {
+    //   title: "Portfolio Website",
+    //   description:
+    //     "Responsive portfolio website showcasing modern design principles with Tailwind CSS and smooth animations.",
+    //   image: "/placeholder.svg?height=300&width=500",
+    //   technologies: ["Next.js", "Tailwind CSS", "TypeScript", "Framer Motion"],
+    //   github: "#",
+    //   demo: "#",
+    //   featured: false,
+    // },
+    // {
+    //   title: "Weather App",
+    //   description: "Real-time weather application with location-based forecasts using React hooks and external APIs.",
+    //   image: "/placeholder.svg?height=300&width=500",
+    //   technologies: ["React.js", "CSS3", "JavaScript", "Weather API"],
+    //   github: "#",
+    //   demo: "#",
+    //   featured: false,
+    // },
   ]
 
   return (
@@ -84,16 +84,16 @@ export function ProjectsSection() {
                     height={300}
                     className="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300"
                   />
-                  {project.featured && <Badge className="absolute top-4 left-4 bg-blue-600">Featured</Badge>}
+                  {project.featured && <Badge className="absolute dark:text-white top-4 left-4 bg-blue-600">Featured</Badge>}
                 </div>
                 <CardHeader>
                   <CardTitle className="flex items-center justify-between">
                     {project.title}
                     <div className="flex gap-2">
-                      <Button size="icon" variant="ghost" className="h-8 w-8">
+                      <Button size="icon" variant="ghost" className="h-8 w-8" onClick={() => window.open(`${project.github}`, '_blank')}>
                         <Github className="w-4 h-4" />
                       </Button>
-                      <Button size="icon" variant="ghost" className="h-8 w-8">
+                      <Button size="icon" variant="ghost" className="h-8 w-8" onClick={() => window.open(`${project.demo}`, '_blank')}>
                         <ExternalLink className="w-4 h-4" />
                       </Button>
                     </div>
@@ -109,11 +109,11 @@ export function ProjectsSection() {
                     ))}
                   </div>
                   <div className="flex gap-3 pt-2">
-                    <Button size="sm" className="flex-1">
+                    <Button size="sm" className="flex-1" onClick={() => window.open(`${project.demo}`, '_blank')}>
                       <Eye className="w-4 h-4 mr-2" />
                       View Demo
                     </Button>
-                    <Button size="sm" variant="outline" className="flex-1">
+                    <Button size="sm" variant="outline" className="flex-1" onClick={() => window.open(`${project.github}`, '_blank')}>
                       <Github className="w-4 h-4 mr-2" />
                       Source Code
                     </Button>

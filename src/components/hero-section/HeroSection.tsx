@@ -46,7 +46,7 @@ export function HeroSection() {
           transition={{ duration: 0.5, delay: 0.2 }}
           className="flex flex-wrap justify-center gap-4 mb-8"
         >
-          <Button size="lg" className="bg-blue-600 hover:bg-blue-700">
+          <Button size="lg" className="bg-blue-600 hover:bg-blue-700 dark:text-white">
             <Mail className="w-4 h-4 mr-2" />
             Get In Touch
           </Button>
@@ -62,13 +62,13 @@ export function HeroSection() {
           transition={{ duration: 0.5, delay: 0.4 }}
           className="flex justify-center gap-6"
         >
-          <Button variant="ghost" size="icon" className="rounded-full">
+          <Button variant="ghost" size="icon" className="rounded-full" onClick={()=> window.open("https://github.com/elbiz17", '_blank')}>
             <Github className="w-5 h-5" />
           </Button>
-          <Button variant="ghost" size="icon" className="rounded-full">
+          <Button variant="ghost" size="icon" className="rounded-full" onClick={()=> window.open("https://www.linkedin.com/in/lukman-budiman-true/", '_blank')}>
             <Linkedin className="w-5 h-5" />
           </Button>
-          <Button variant="ghost" size="icon" className="rounded-full">
+          <Button variant="ghost" size="icon" className="rounded-full" onClick={()=> window.location.href = "#contact"}>
             <Mail className="w-5 h-5" />
           </Button>
         </motion.div>

@@ -5,7 +5,7 @@ import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 import { Textarea } from "@/components/ui/textarea"
 import { Label } from "@/components/ui/label"
-import { Mail, Phone, MapPin, Github, Linkedin, Twitter, Send } from "lucide-react"
+import { Mail, Phone, MapPin, Github, Linkedin, Send } from "lucide-react"
 import { motion } from "framer-motion"
 
 export function ContactSection() {
@@ -43,7 +43,7 @@ export function ContactSection() {
                                     </div>
                                     <div>
                                         <p className="font-medium">Email</p>
-                                        <p className="text-slate-600 dark:text-slate-300">lukman.budiman@email.com</p>
+                                        <p className="text-slate-600 dark:text-slate-300">lukmanbudimantrue@gmail.com</p>
                                     </div>
                                 </div>
                                 <div className="flex items-center gap-4">
@@ -52,7 +52,7 @@ export function ContactSection() {
                                     </div>
                                     <div>
                                         <p className="font-medium">Phone</p>
-                                        <p className="text-slate-600 dark:text-slate-300">+62 812-3456-7890</p>
+                                        <p className="text-slate-600 dark:text-slate-300">+62 823-1023-8276</p>
                                     </div>
                                 </div>
                                 <div className="flex items-center gap-4">
@@ -61,7 +61,7 @@ export function ContactSection() {
                                     </div>
                                     <div>
                                         <p className="font-medium">Location</p>
-                                        <p className="text-slate-600 dark:text-slate-300">Jakarta, Indonesia</p>
+                                        <p className="text-slate-600 dark:text-slate-300">Kuningan, Indonesia</p>
                                     </div>
                                 </div>
                             </div>
@@ -70,14 +70,15 @@ export function ContactSection() {
                         <div>
                             <h4 className="text-lg font-semibold mb-4">Follow Me</h4>
                             <div className="flex gap-4">
-                                <Button size="icon" variant="outline" className="rounded-full">
+                                <Button size="icon" variant="outline" className="rounded-full"
+                                    onClick={()=> window.open("https://github.com/elbiz17", "_blank")}
+                                >
                                     <Github className="w-5 h-5" />
                                 </Button>
-                                <Button size="icon" variant="outline" className="rounded-full">
+                                <Button size="icon" variant="outline" className="rounded-full"
+                                     onClick={()=> window.open("https://www.linkedin.com/in/lukman-budiman-true/", "_blank")}
+                                >
                                     <Linkedin className="w-5 h-5" />
-                                </Button>
-                                <Button size="icon" variant="outline" className="rounded-full">
-                                    <Twitter className="w-5 h-5" />
                                 </Button>
                             </div>
                         </div>

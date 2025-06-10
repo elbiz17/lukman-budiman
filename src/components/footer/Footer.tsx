@@ -55,7 +55,7 @@ export function Footer() {
 
         <div className="border-t border-slate-700 mt-8 pt-8 text-center">
           <p className="text-slate-300 flex items-center justify-center gap-2">
-            Made with <Heart className="w-4 h-4 text-red-500" /> by Lukman Budiman © 2024
+            Made with <Heart className="w-4 h-4 text-red-500" /> by Lukman Budiman © 2025
           </p>
         </div>
       </div>
