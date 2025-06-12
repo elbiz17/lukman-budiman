@@ -10,6 +10,26 @@ import Image from "next/image"
 export function ProjectsSection() {
   const projects = [
     {
+      title: "B2B (Expense Management System)",
+      description:
+        "Expenses Management System B2B menggunakan Next.js, Tabler Ul, dan Redux. ",
+      image: "/images/image.png",
+      technologies: ["Next JS", "Redux", "Tabler UI", "Typescript", "Echart", "Highchart", "Rsuite"],
+      github: null,
+      demo: null,
+      featured: true,
+    },
+    {
+      title: "Loan Management System (X-LOS)",
+      description:
+        "Loan Management System menggunakan Next.js, shadcn/ui, dan Redux Toolkit dengan RTK Query. ",
+      image: "/images/image.png",
+      technologies: ["Next JS", "Redux Toolkit + RTK Query",  "Shadcn UI", "Typescript", "Echart", "Auth JS", "Formik", "Mqtt"],
+      github: null,
+      demo: null,
+      featured: true,
+    },
+    {
       title: "Progressive Web Apps (E-Commerce)",
       description:
         "",
@@ -17,18 +37,9 @@ export function ProjectsSection() {
       technologies: ["React.js", "Tailwind CSS"],
       github: "https://github.com/elbiz17/luxspace_pwa",
       demo: "https://luxspace-pwa-eight-gamma.vercel.app/",
-      featured: true,
+      featured: false,
     },
-    // {
-    //   title: "Task Management App",
-    //   description:
-    //     "Collaborative task management application with drag-and-drop functionality using React, RTK Query, and Bootstrap components.",
-    //   image: "/placeholder.svg?height=300&width=500",
-    //   technologies: ["React.js", "RTK Query", "Bootstrap", "JavaScript"],
-    //   github: "#",
-    //   demo: "#",
-    //   featured: true,
-    // },
+    
     // {
     //   title: "Portfolio Website",
     //   description:
@@ -60,7 +71,7 @@ export function ProjectsSection() {
           viewport={{ once: true }}
           className="text-center mb-16"
         >
-          <h2 className="text-4xl md:text-5xl font-bold mb-4">Featured Projects</h2>
+          <h2 className="text-4xl md:text-5xl font-bold mb-4">Projects</h2>
           <p className="text-lg text-slate-600 dark:text-slate-300 max-w-2xl mx-auto">
             A showcase of my recent work demonstrating proficiency in modern web development technologies.
           </p>
@@ -90,10 +101,10 @@ export function ProjectsSection() {
                   <CardTitle className="flex items-center justify-between">
                     {project.title}
                     <div className="flex gap-2">
-                      <Button size="icon" variant="ghost" className="h-8 w-8" onClick={() => window.open(`${project.github}`, '_blank')}>
+                      <Button disabled={project.github == null} size="icon" variant="ghost" className="h-8 w-8" onClick={() => window.open(`${project.github}`, '_blank')}>
                         <Github className="w-4 h-4" />
                       </Button>
-                      <Button size="icon" variant="ghost" className="h-8 w-8" onClick={() => window.open(`${project.demo}`, '_blank')}>
+                      <Button disabled={project.demo == null} size="icon" variant="ghost" className="h-8 w-8" onClick={() => window.open(`${project.demo}`, '_blank')}>
                         <ExternalLink className="w-4 h-4" />
                       </Button>
                     </div>
@@ -109,11 +120,11 @@ export function ProjectsSection() {
                     ))}
                   </div>
                   <div className="flex gap-3 pt-2">
-                    <Button size="sm" className="flex-1" onClick={() => window.open(`${project.demo}`, '_blank')}>
+                    <Button disabled={project.demo == null} size="sm" className="flex-1" onClick={() => window.open(`${project.demo}`, '_blank')}>
                       <Eye className="w-4 h-4 mr-2" />
                       View Demo
                     </Button>
-                    <Button size="sm" variant="outline" className="flex-1" onClick={() => window.open(`${project.github}`, '_blank')}>
+                    <Button disabled={project.github == null} size="sm" variant="outline" className="flex-1" onClick={() => window.open(`${project.github}`, '_blank')}>
                       <Github className="w-4 h-4 mr-2" />
                       Source Code
                     </Button>

@@ -1,3 +1,4 @@
+"use client"
 import { Github, Linkedin, Mail, Heart } from "lucide-react"
 import { Button } from "@/components/ui/button"
 
@@ -12,13 +13,13 @@ export function Footer() {
               Frontend Developer passionate about creating exceptional user experiences with modern web technologies.
             </p>
             <div className="flex gap-3">
-              <Button variant="ghost" size="icon" className="text-slate-300 hover:text-white">
+              <Button variant="ghost" size="icon" className="text-slate-300 hover:text-white" onClick={()=> window.open("https://github.com/elbiz17", "_blank")}>
                 <Github className="w-5 h-5" />
               </Button>
-              <Button variant="ghost" size="icon" className="text-slate-300 hover:text-white">
+              <Button variant="ghost" size="icon" className="text-slate-300 hover:text-white"  onClick={()=> window.open("https://www.linkedin.com/in/lukman-budiman-true/", "_blank")}>
                 <Linkedin className="w-5 h-5" />
               </Button>
-              <Button variant="ghost" size="icon" className="text-slate-300 hover:text-white">
+              <Button variant="ghost" size="icon" className="text-slate-300 hover:text-white" onClick={() => window.location.href = "mailto:lukmanbudimantrue@gmail.com"}>
                 <Mail className="w-5 h-5" />
               </Button>
             </div>

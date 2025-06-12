@@ -34,7 +34,7 @@ export function AboutSection() {
                 <User className="w-12 h-12 mx-auto mb-4 text-blue-600" />
                 <h3 className="text-xl font-semibold mb-3">Who I Am</h3>
                 <p className="text-slate-600 dark:text-slate-300">
-                  A dedicated frontend developer with 3+ years of experience creating responsive, user-friendly web
+                  A dedicated frontend developer with 2+ years of experience creating responsive, user-friendly web
                   applications using cutting-edge technologies.
                 </p>
               </CardContent>

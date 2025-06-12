@@ -25,7 +25,7 @@ export function SkillsSection() {
     {
       title: "Tools & Workflow",
       icon: <Wrench className="w-6 h-6" />,
-      skills: ["VS Code", "GitHub", "Git", "npm/yarn", "Auth.js"],
+      skills: ["VS Code", "GitHub", "Git", "npm/pnpm/bun", "Auth.js", "Postman"],
     },
   ]
 
@@ -39,7 +39,7 @@ export function SkillsSection() {
     "Tailwind CSS",
     "Bootstrap",
     "Shadcn/UI",
-    "Tabler Icons",
+    "Tabler UI",
     "Redux",
     "Redux Toolkit",
     "RTK Query",

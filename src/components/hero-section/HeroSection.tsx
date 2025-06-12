@@ -46,11 +46,11 @@ export function HeroSection() {
           transition={{ duration: 0.5, delay: 0.2 }}
           className="flex flex-wrap justify-center gap-4 mb-8"
         >
-          <Button size="lg" className="bg-blue-600 hover:bg-blue-700 dark:text-white">
+          <Button onClick={() => window.location.href = "#contact"} size="lg" className="bg-blue-600 hover:bg-blue-700 dark:text-white">
             <Mail className="w-4 h-4 mr-2" />
             Get In Touch
           </Button>
-          <Button size="lg" variant="outline">
+          <Button size="lg" variant="outline" onClick={() => window.open("/assets/LUKMAN_BUDIMAN_CV.pdf", "_blank")}>
             <Download className="w-4 h-4 mr-2" />
             Download CV
           </Button>
