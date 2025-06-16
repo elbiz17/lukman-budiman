@@ -13,7 +13,7 @@ export function ProjectsSection() {
       title: "B2B (Expense Management System)",
       description:
         "Expenses Management System B2B menggunakan Next.js, Tabler Ul, dan Redux. ",
-      image: "/images/image.png",
+      image: "/images/b2b-expense.jpg",
       technologies: ["Next JS", "Redux", "Tabler UI", "Typescript", "Echart", "Highchart", "Rsuite"],
       github: null,
       demo: null,
@@ -23,7 +23,7 @@ export function ProjectsSection() {
       title: "Loan Management System (X-LOS)",
       description:
         "Loan Management System menggunakan Next.js, shadcn/ui, dan Redux Toolkit dengan RTK Query. ",
-      image: "/images/image.png",
+      image: "/images/x-los.png",
       technologies: ["Next JS", "Redux Toolkit + RTK Query",  "Shadcn UI", "Typescript", "Echart", "Auth JS", "Formik", "Mqtt"],
       github: null,
       demo: null,
@@ -77,7 +77,7 @@ export function ProjectsSection() {
           </p>
         </motion.div>
 
-        <div className="grid md:grid-cols-2 gap-8">
+        <div className="grid md:grid-cols-3 gap-8">
           {projects.map((project, index) => (
             <motion.div
               key={project.title}
@@ -93,7 +93,7 @@ export function ProjectsSection() {
                     alt={project.title}
                     width={500}
                     height={300}
-                    className="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300"
+                    className="w-full h-48 object-fill group-hover:scale-105 transition-transform duration-300"
                   />
                   {project.featured && <Badge className="absolute dark:text-white top-4 left-4 bg-blue-600">Featured</Badge>}
                 </div>
