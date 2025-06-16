@@ -22,7 +22,7 @@ export function HeroSection() {
             Lukman Budiman
           </h1>
           <p className="text-xl md:text-2xl text-slate-600 dark:text-slate-300 mb-6">
-            Frontend Developer & UI/UX Enthusiast
+            Frontend Developer
           </p>
           <div className="flex flex-wrap justify-center gap-2 mb-8">
             <Badge variant="secondary" className="text-sm">
