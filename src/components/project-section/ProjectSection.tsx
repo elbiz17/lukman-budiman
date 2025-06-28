@@ -44,9 +44,9 @@ export function ProjectsSection() {
       title: "Landing Page dan Admin Sistem Fotografi",
       description:
         "Desain halaman landing dan admin sistem foto untuk kebutuhan website fotografi",
-      image: "/placeholder.svg?height=300&width=500",
+      image: "/images/fotografi.png",
       technologies: ["Next.js", "Shadcn UI", "TypeScript", "Prisma", "Mysql", "Railway", "Supabase", "Docker"],
-      github: "#",
+      github: null,
       demo: "https://photo-studio-project-production.up.railway.app/",
       featured: false,
     },
