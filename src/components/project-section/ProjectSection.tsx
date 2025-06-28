@@ -40,16 +40,16 @@ export function ProjectsSection() {
       featured: false,
     },
     
-    // {
-    //   title: "Portfolio Website",
-    //   description:
-    //     "Responsive portfolio website showcasing modern design principles with Tailwind CSS and smooth animations.",
-    //   image: "/placeholder.svg?height=300&width=500",
-    //   technologies: ["Next.js", "Tailwind CSS", "TypeScript", "Framer Motion"],
-    //   github: "#",
-    //   demo: "#",
-    //   featured: false,
-    // },
+    {
+      title: "Landing Page dan Admin Sistem Fotografi",
+      description:
+        "Desain halaman landing dan admin sistem foto untuk kebutuhan website fotografi",
+      image: "/placeholder.svg?height=300&width=500",
+      technologies: ["Next.js", "Shadcn UI", "TypeScript", "Prisma", "Mysql", "Railway", "Supabase", "Docker"],
+      github: "#",
+      demo: "https://photo-studio-project-production.up.railway.app/",
+      featured: false,
+    },
     // {
     //   title: "Weather App",
     //   description: "Real-time weather application with location-based forecasts using React hooks and external APIs.",
