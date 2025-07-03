@@ -50,15 +50,15 @@ export function ProjectsSection() {
       demo: "https://photo-studio-project-production.up.railway.app/",
       featured: false,
     },
-    // {
-    //   title: "Weather App",
-    //   description: "Real-time weather application with location-based forecasts using React hooks and external APIs.",
-    //   image: "/placeholder.svg?height=300&width=500",
-    //   technologies: ["React.js", "CSS3", "JavaScript", "Weather API"],
-    //   github: "#",
-    //   demo: "#",
-    //   featured: false,
-    // },
+    {
+      title: "Landing Page PWA",
+      description: "Desain halaman landing page dengan mengoptimalkan SEO & PWA (Progressive Web Applications).",
+      image: "/images/infotechidn.png",
+      technologies: ["Next.js", "Typescript", "SEO", "PWA", "Shadcn UI"],
+      github: null,
+      demo: "https://www.infotechidn.com",
+      featured: false,
+    },
   ]
 
   return (

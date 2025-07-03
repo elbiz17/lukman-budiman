@@ -33,7 +33,7 @@ export function Navigation() {
     >
       <div className="max-w-6xl mx-auto px-4 py-4">
         <div className="flex items-center justify-between">
-          <div className="text-xl font-bold">Lukman Budiman</div>
+          <div className="text-xl font-bold bg-clip-text bg-gradient-to-r from-blue-500 via-blue-400 to-purple-600 text-transparent">Lukman Budiman</div>
 
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center gap-8">
