@@ -13,7 +13,7 @@ export function ProjectsSection() {
       title: "B2B (Expense Management System)",
       description:
         "Expenses Management System B2B menggunakan Next.js, Tabler Ul, dan Redux. ",
-      image: "/images/b2b-expense.jpg",
+      image: "/images/b2b-expense.png",
       technologies: ["Next JS", "Redux", "Tabler UI", "Typescript", "Echart", "Highchart", "Rsuite"],
       github: null,
       demo: null,
@@ -93,7 +93,7 @@ export function ProjectsSection() {
                     alt={project.title}
                     width={500}
                     height={300}
-                    className="w-full h-48 object-fill group-hover:scale-105 transition-transform duration-300"
+                    className="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300"
                   />
                   {project.featured && <Badge className="absolute dark:text-white top-4 left-4 bg-blue-600">Featured</Badge>}
                 </div>
