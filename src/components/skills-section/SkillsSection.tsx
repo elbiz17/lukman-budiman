@@ -20,7 +20,7 @@ export function SkillsSection() {
     {
       title: "State Management",
       icon: <Database className="w-6 h-6" />,
-      skills: ["Redux Toolkit", "RTK Query", "Redux", "Context API"],
+      skills: ["Redux Toolkit", "RTK Query", "Redux"],
     },
     {
       title: "Tools & Workflow",
